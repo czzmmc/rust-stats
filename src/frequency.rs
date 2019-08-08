@@ -1,3 +1,5 @@
+
+use std::prelude::v1::*;
 use std::collections::hash_map::{HashMap, Entry};
 use std::fmt;
 use std::hash::Hash;

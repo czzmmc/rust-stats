@@ -10,8 +10,14 @@ readme = "README.md"
 keywords = ["statistics", "stats", "median", "mean", "stddev"]
 license = "Unlicense/MIT"
 
+[features]
+default = ["mesalock_sgx"]
+mesalock_sgx = ["sgx_tstd", "std"]
+std = []
+
 [lib]
 name = "stats"
 
 [dependencies]
-num-traits = "0.2"
+num-traits   = { git = "https://github.com/mesalock-linux/num-traits-sgx" }
+sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
