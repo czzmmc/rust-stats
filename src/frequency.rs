@@ -11,7 +11,7 @@ use Commute;
 /// A commutative data structure for exact frequency counts.
 #[derive(Clone)]
 pub struct Frequencies<T> {
-    data: HashMap<T, u64>,
+    pub data: HashMap<T, u64>,
 }
 
 impl<T: fmt::Debug + Eq + Hash> fmt::Debug for Frequencies<T> {
