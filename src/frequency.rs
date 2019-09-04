@@ -95,7 +95,7 @@ impl<T: Eq + Hash> Commute for Frequencies<T> {
 
 impl<T: Eq + Hash> Default for Frequencies<T> {
     fn default() -> Frequencies<T> {
-        Frequencies { data: HashMap::with_capacity(100000) }
+        Frequencies { data: HashMap::new() }
     }
 }
 
