@@ -19,5 +19,5 @@ std = []
 name = "stats"
 
 [dependencies]
-num-traits   = { rev ="c61f79b76ea95b7001e1b03abf7fe9d6ea895fc2",git = "https://github.com/mesalock-linux/num-traits-sgx" }
-sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
+num-traits   = { git = "https://github.com/mesalock-linux/num-traits-sgx" }
+sgx_tstd = { rev = "v1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
