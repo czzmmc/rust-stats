@@ -20,4 +20,4 @@ name = "stats"
 
 [dependencies]
 num-traits   = { git = "https://github.com/mesalock-linux/num-traits-sgx" }
-sgx_tstd = { rev = "v1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
+sgx_tstd = { git = "https://github.com/apache/teaclave-sgx-sdk", rev = "v1.1.2", optional = true }
